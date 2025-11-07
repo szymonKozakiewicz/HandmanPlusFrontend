@@ -3,3 +3,42 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@theme{
+    --color-handYellow:#F3C867;
+    --color-handBlue:#006CE4;
+    --color-handBlueLight:#247de0;
+    --color-handBlueLighter:#006ce4ad
+}
+
+@layer components{
+    .btn{
+        @apply inline-flex items-center 
+           justify-center 
+           px-4 py-2
+           text-sm font-medium 
+           focus:outline-none;
+    }
+
+    .btn-blue{
+        @apply bg-handBlue text-white hover:bg-handBlueLight
+    }
+
+    .handmanInput{
+        @apply pl-3 focus:outline-none focus:border-handBlueLight 
+    }
+}
+
+.handmanInput:focus{
+    border-width: 0.05rem;
+    box-shadow: 0 0 0 3px #1a73e84a;
+
+
+}
+
+.handmanInput::placeholder{
+    color: #57595e;
+    font-size: 0.875rem;
+}
+
+

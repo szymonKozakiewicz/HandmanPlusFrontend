@@ -1,0 +1,32 @@
+.logo{
+    height: 2rem;
+}
+.transparentInputPanel{
+    background-color: #00000021 ;
+    border-radius: 0.5rem;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    z-index: 2;
+    height: 5rem;
+    width: 100%;
+    
+}
+.promoGraphic{
+    
+    width: auto;
+    grid-column: 3/5;
+    grid-row: 1/4;
+    z-index: 1;
+}
+
+.searchImgGridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    align-items: center;
+    justify-items: right;
+    height: 20rem;
+    
+}
+
+
