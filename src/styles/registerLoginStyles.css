@@ -1,0 +1,12 @@
+@layer{
+    .registerLoginInput{
+        @apply w-full border-1 border-gray-400 p-2 rounded-lg
+    }
+
+    .registerLoginBtn{
+
+    }
+    .line{
+        @apply h-[0.1rem] bg-gray-400
+    }
+}
